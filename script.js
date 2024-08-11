@@ -1,7 +1,7 @@
 document.getElementById("get weather").addEventListener("click",()=>{
     const Location=document.getElementById("location").value;
     apikey="989b6c5979714469a98102707241108";
-    const apiURl=`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${Location}&aqi=no`
+    const apiURl=`https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${Location}&aqi=no`
  fetch(apiURl)
    .then(response=>response.json())
    .then(data=>{
